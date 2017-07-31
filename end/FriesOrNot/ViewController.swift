@@ -49,7 +49,8 @@ class ViewController: UIViewController,
         }
         
         photoImageView.image = selectedImage
-        
+       
+	resultLabel.text = "" 
         self.activityIndicator.startAnimating()
         
         dismiss(animated: true, completion: nil)
