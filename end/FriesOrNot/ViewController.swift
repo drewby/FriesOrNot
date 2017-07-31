@@ -49,12 +49,11 @@ class ViewController: UIViewController,
         }
         
         photoImageView.image = selectedImage
-       
-	resultLabel.text = "" 
-        self.activityIndicator.startAnimating()
-        
         dismiss(animated: true, completion: nil)
-        
+
+	    resultLabel.text = "" 
+        self.activityIndicator.startAnimating()
+                
         let imageData = UIImageJPEGRepresentation(selectedImage, 0.8)!
         service.predict(image: imageData, completion: { (result: CustomVisionResult?, error: Error?) in
             DispatchQueue.main.async {
@@ -67,7 +66,6 @@ class ViewController: UIViewController,
                     self.resultLabel.text = "\(probabilityLabel)% sure this is \(prediction.Tag)"
                 }
             }
-            
         })
     }
     
