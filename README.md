@@ -5,9 +5,9 @@ After you create your custom image classifier, it's easy to build into any app b
 
 This lab includes the following tasks:
 
-* Creating a new image classifier project
-* Creating your iOS app in Xcode and Swift
-* Improving your classifier over time
+* [Creating a new image classifier project](#creating-a-new-image-classifier-project)
+* [Creating your iOS app in Xcode and Swift](#creating-your-ios-app-in-xcode-and-swift)
+* [Improving your classifier over time](#improving-your-classifier-over-time)
 
 ### Requirements
 
@@ -309,7 +309,7 @@ The following will be required for you to complete this lab:
     ```
 1. Click the **Run** button to test your project. Now when you pick an Image, the app should request a prediction from Custom Vision. Once returned, it will display the Tags and confidence for each Tag.
 
-### Improving your classifier over time
+## Improving your classifier over time
 1. Open a web browser to http://customvision.ai and sign in using your Microsoft Account (MSA).
 1. Click the **Predictions** tab
 1. On this tab, you will see images that were submitted for Predictions.
