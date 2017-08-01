@@ -3,6 +3,8 @@ With Microsoft's Custom Vision Service, it's easy and fast to build, deploy, and
 
 After you create your custom image classifier, it's easy to build into any app by using a REST API provided by the Custom Vision service. In addition, you can improve your classifier overtime by using the web interface to upload images, tag images from end users and re-train your model. 
 
+![alt Not fries app image](images/app0.png?raw=true "Not fries app image")![alt Fries app image](images/app1.png?raw=true "Fries app image")
+
 This lab includes the following tasks:
 
 * [Creating a new image classifier project](#creating-a-new-image-classifier-project)
@@ -25,41 +27,63 @@ The following will be required for you to complete this lab:
 
 1. Open a web browser to http://customvision.ai and sign in using your Microsoft Account (MSA)
 
+    ![alt Sign in to Custom Vision](images/cvs0.png?raw=true "Sign in to Custom Vision")
+
 1. If this is your first time using the service, agree to the Terms of Service by checking the boxes and clicking I agree.
 
+    ![alt Accept agreement](images/cvs2.png?raw=true "Accept agreement")
+
 1. Click **New Project** to create your first project.
+
+    ![alt New project](images/cvs3.png?raw=true "New Project")
 
 1. Enter a name and description for your project. 
 
 1. Select one of the provided Domains, or if you are not sure use General.
 
+    ![alt New project description](images/cvs4.png?raw=true "New Project description")
+
 ### Add Images
 
 1. Click **Add images** to add images to your project.
 
+    ![alt Add images](images/cvs5.png?raw=true "Add images")
+
 1. Click **Browse local files** to select images from your local disk. 
+
+    ![alt Open images](images/cvs6.png?raw=true "Open images")
 
 1. Select at least 30 images for your first Tag set. Click **Open**.
 
+    ![alt Open images](images/cvs7.png?raw=true "Open images")
+
 1. Type in a Tag and press the **+** button. You can add additional tags.
+
+    ![alt Add tag](images/cvs8.png?raw=true "Add tag")
 
 1. Now click **Upload ## files**
 
 1. Repeat these steps for at least one more Tag set.
 
+    ![alt Add tag](images/cvs9.png?raw=true "Add tag")
+
 ### Train your classifier
 
 1. At the top of the window, find the green button called **Train**. Click it!
+
+    ![alt Train](images/cvs11.png?raw=true "Train")
 
 1. This is all it takes to train your new custom image classifier.
 
 1. Once trained, you will be shown precision and recall indicators which tell you about the performance of your classifier.
 
-1. If you are happy with this iteration of your classifier, click the Check mark to make this the default. 
+    ![alt Train](images/cvs12.png?raw=true "Train")
 
-    > **Precision** - sdfsdf
+    > **Precision** - How likely is a tagged image to be correct?
     >
-    > **Recall** - sdfdskjf
+    > **Recall** - How often did your classifier tag correctly?
+
+1. If you are happy with this iteration of your classifier, click the Check mark to make this the default. 
 
 ### Test your model
 
@@ -78,6 +102,8 @@ The following will be required for you to complete this lab:
 1. Copy the Prediction URL for uploading an Image.
 
 1. Copy the Prediction Key for accessing the API. 
+
+    ![alt Prediction URL and key](images/cvs13.png?raw=true "Prediction URL and key")
 
 1. Paste these details to a Note for later use.
 
@@ -151,11 +177,13 @@ The following will be required for you to complete this lab:
 
 1. Drag an **Image View** to the Stack View and drop it in between the two labels.
 
-    ![alt Add labels to the stack view](images/xcode5.png?raw=true "Add labels to the stack view")
+    ![alt Add an Image View to the stack view](images/xcode5.png?raw=true "Add an Image View to the stack view")
 
 1. Now filter for "activity" in Object library.
 
 1. Drag an **Activity Indicator View** to the Stack View and drop just below the image view.
+
+    ![alt Add an Activity Indicator to the stack view](images/xcode5b.png?raw=true "Add an Activity Indicator to the stack view")
 
 ### Set UI layout properties
 
@@ -163,15 +191,21 @@ The following will be required for you to complete this lab:
 
 1. In the Attributes inspector, set the Spacing to 8.
 
+    ![alt Set spacing to 8](images/xcode6.png?raw=true "Set spacing to 8")
+
 1. Click the Constraints button at the bottom of the canvas window.
 
 1. Above **Spacing to nearest neighbor**, enter 20 for the Top and 0 for the Left and Right boundaries. 
 
 1. Click **Add 3 Constraints**
 
+    ![alt Add three constraints](images/xcode7.png?raw=true "Add three constraints")
+
 1. Now select the Image View.
 
 1. In the Attributes inspector, set the Height to the same as the Width (~350)
+
+    ![alt Set height of Image View](images/xcode8.png?raw=true "Add three constraints")
 
 1. Click the Constraints button. 
 
@@ -186,9 +220,13 @@ The following will be required for you to complete this lab:
 
 1. Drag the defaultPhoto.png from source files to the 2x slot in the image set.
 
+    ![alt Set height of Image View](images/xcode9.png?raw=true "Set height of Image View")
+
 1. Select the Image View in the canvas again.
 
 1. Set the **Image** attribute to defaultPhoto.
+
+    ![alt Set Image attribute to default Photo](images/xcode9.png?raw=true "Set Image attribute to default Photo")
 
 1. Check the **User Interaction Enabled** attribute.
 
@@ -202,19 +240,31 @@ The following will be required for you to complete this lab:
 
 1. Hold the Control-key and drag the result label to your ViewController just under the line starting with "class".
 
-1. Type "resultLabel" for the **Name** and click **Connect**.
-
-1. Hold the Control-key and drag the image view to your ViewController just under the previous resultLabel definition.
-
+    ![alt Connect the Image View to code](images/xcode12.png?raw=true "Connect the Image View to code")
+    
 1. Type "photoImageView" for the **Name** and click **Connect**.
+
+    ![alt Set connection properties for Image view](images/xcode13.png?raw=true " Set connection properties for Image view")
 
 1. Hold the Control-key and drag the activity indicator to your ViewController just under the previous photoImageView definition.
 
+    ![alt Connect the Results label to code](images/xcode14.png?raw=true "Connect the Image View to code")
+
+1. Type "resultLabel" for the **Name** and click **Connect**.
+
+    ![alt Set connection properties for result label](images/xcode15.png?raw=true "Set connection properties for result label")
+
+1. Hold the Control-key and drag the image view to your ViewController just under the previous resultLabel definition.
+
 1. Type "activityIndicator" for the **Name** and click **Connect**.
+
+    ![alt Set connection properties for activity indicator](images/xcode16.png?raw=true "Set connection properties for activity indicator")
 
 1. Hold the Control-key and drag the Tap Gesture (from top of canvas) to your ViewController just above the closing curly brace.
 
 1. Change the **Connection** to **Action** and the **Type** to **UITapGestureRecognizer**. **Name** the new action "selectImage"
+
+    ![alt Set connection properties for Tap Gesture](images/xcode17.png?raw=true "Set connection properties for Tap Gesture")
 
 ### Write code for Image Picker
 
@@ -278,7 +328,11 @@ The following will be required for you to complete this lab:
 
 1. Select **Swift File** and click **Next**.
 
+    ![alt Create swift file](images/xcode18.png?raw=true "Create swift file")
+
 1. Name the file "CustomVisionResult" and click **Create**..
+
+    ![alt Create swift file](images/xcode19.png?raw=true "Create swift file")
 
 1. In this file, create the following class:
 
@@ -438,8 +492,12 @@ The following will be required for you to complete this lab:
 
 1. If you hover your mouse cursor over an image, you'll see how the confidence for each Tag for that image.
 
+    ![alt Predictions tab](images/cvs14.png?raw=true "Predictions tab")
+
 1. If you would like to further train your algorithm, click the image.
 
 1. Add a Tag and click **Save and close**
+
+    ![alt Predictions tab](images/cvs15.png?raw=true "Predictions tab")
 
 1. Click the green **Train** button to retrain your model using your new inputs.
