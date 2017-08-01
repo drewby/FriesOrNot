@@ -113,7 +113,7 @@ The following will be required for you to complete this lab:
     >
     > **Include UI Tests**: Unselected.
 
-    ![alt Choose a template](images/xcode1.png?raw=true "Choose a template")
+    ![alt Choose options for your app project](images/xcode1.png?raw=true "Choose options for your app project")
 
 1. Click **Next**.
 
@@ -121,7 +121,7 @@ The following will be required for you to complete this lab:
 
 1. Click the **Run** button to make sure the empty project works.
 
-    ![alt Choose a template](images/xcode2.png?raw=true "Choose a template")
+    ![alt New project created](images/xcode2.png?raw=true "New project created")
 
 ### Add UI objects to Storyboard
 
@@ -133,6 +133,8 @@ The following will be required for you to complete this lab:
 
 1. Drag the **Vertical Stack View** to your scene.
 
+    ![alt Add a stack view to your scene](images/xcode3.png?raw=true "Add a stack view to your scene")
+
 1. Now filter for "label" in Object library.
 
 1. Drag a **Label** and drop it onto the Stack View. 
@@ -143,9 +145,13 @@ The following will be required for you to complete this lab:
 
 1. Change the text for this label to "Result".
 
+    ![alt Add labels to the stack view](images/xcode4.png?raw=true "Add labels to the stack view")
+
 1. Now filter for "image view" in Object library.
 
 1. Drag an **Image View** to the Stack View and drop it in between the two labels.
+
+    ![alt Add labels to the stack view](images/xcode5.png?raw=true "Add labels to the stack view")
 
 1. Now filter for "activity" in Object library.
 
