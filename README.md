@@ -10,6 +10,7 @@ This lab includes the following tasks:
 * [Creating a new image classifier project](#creating-a-new-image-classifier-project)
 * [Creating your iOS app in Xcode and Swift](#creating-your-ios-app-in-xcode-and-swift)
 * [Improving your classifier over time](#improving-your-classifier-over-time)
+* [Have more fun with Cognitive Services](#have-more-fun-with-cognitive-services)
 
 ### Requirements
 
@@ -20,6 +21,15 @@ The following will be required for you to complete this lab:
 * Additional images for testing your model.
 * Software: Xcode
 * Optional: iPhone to test your app on a device
+
+### Lab assets
+
+The assets folder of this code repository ([https://github.com/drewby/FriesOrNot](https://github.com/drewby/FriesOrNot)) contains the following:
+
+* Training - a set of images to train your custom image classifier
+* Test - some extra images to test your image classifier
+* Snippets - a copy of the code used in the lab, in case you don't want to type
+* defaultPhoto.png - a place holder image for the Swift app Image View. 
 
 ## Creating a new image classifier project
 
@@ -501,3 +511,19 @@ The following will be required for you to complete this lab:
     ![alt Predictions tab](images/cvs15.png?raw=true "Predictions tab")
 
 1. Click the green **Train** button to retrain your model using your new inputs.
+
+## Have more fun with Cognitive Services
+
+Now that you know how to create your own customer image classifier and use 
+that classifier in an app, you can explore using other Cognitive Services
+that are pre-trained or ready for you to finalize at [http://microsoft.com/cognitive](http://microsoft.com/cognitive).
+
+For example, use the Face API to detect attributes such as gender, age and emotion
+in photo of someone's face. Or use the Computer Vision API to detect all sorts
+of objects present in a photo. 
+
+There is an example of using the Face API to decect age and gender in the assets 
+folder if this code repository.
+
+![alt Face API example](images/FaceAPI.png?raw=true "Face API example")
+

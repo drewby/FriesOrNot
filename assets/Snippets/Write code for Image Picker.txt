@@ -1,0 +1,27 @@
+// Change the ViewController class defintion to include two more implementations:
+class ViewController: UIViewController,
+                    UIImagePickerControllerDelegate,
+                    UINavigationControllerDelegate {
+
+// Add the following code to the selectImage function:
+let imagePickerController = UIImagePickerController()
+        imagePickerController.sourceType = .photoLibrary
+        
+        imagePickerController.delegate = self
+        
+        present(imagePickerController, animated: true, completion: nil)
+
+// Add the following function to ViewController:
+func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    dismiss(animated: true, completion: nil)
+}
+
+// Add the following function to ViewController:
+func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    guard let selectedImage = info UIImagePickerControllerOriginalImage] as? UIImage else {
+        fatalError("Expected an image, but was provided \(info)")
+    }
+    
+    photoImageView.image = selectedImage
+    dismiss(animated: true, completion: nil)
+}
