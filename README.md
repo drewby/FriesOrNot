@@ -65,6 +65,7 @@ The following will be required for you to complete this lab:
 1. Select **Create a new Xcode project** (or choose **File** > **New** > **Project**)
 1. Select iOS at the top of the dialog.
 1. In the **Application** section, select **Single View Application** and then click **Next**.
+    ![alt Choose a template](images/Xcode0.png "Choose a template")
 1. Use the following values to name your app and choose additional options:
     > **Product Name**: FriesOrNot
     >
