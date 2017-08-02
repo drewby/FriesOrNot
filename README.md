@@ -205,6 +205,8 @@ The assets folder of this code repository ([https://github.com/drewby/FriesOrNot
 
 1. Click the Constraints button at the bottom of the canvas window.
 
+    ![alt Set spacing to 8](images/xcode6a.png?raw=true "Set spacing to 8")
+
 1. Above **Spacing to nearest neighbor**, enter 20 for the Top and 0 for the Left and Right boundaries. 
 
 1. Click **Add 3 Constraints**
@@ -224,7 +226,11 @@ The assets folder of this code repository ([https://github.com/drewby/FriesOrNot
 
 1. Open Assets.xcassets by clicking in the Project Navigator.
 
+    ![alt Set height of Image View](images/xcode9a.png?raw=true "Set height of Image View")
+
 1. Click the **+** button to add a **New Image Set**
+
+    ![alt Set Image attribute to default Photo](images/xcode10a.png?raw=true "Set Image attribute to default Photo")
 
 1. Double-click the new image set and rename to "defaultPhoto"
 
@@ -232,13 +238,15 @@ The assets folder of this code repository ([https://github.com/drewby/FriesOrNot
 
     ![alt Set height of Image View](images/xcode9.png?raw=true "Set height of Image View")
 
-1. Select the Image View in the canvas again.
+1. Select the **Image View** in the canvas **Main.storyboard** again.
 
 1. Set the **Image** attribute to defaultPhoto.
 
-    ![alt Set Image attribute to default Photo](images/xcode9.png?raw=true "Set Image attribute to default Photo")
+    ![alt Set Image attribute to default Photo](images/xcode10.png?raw=true "Set Image attribute to default Photo")
 
 1. Check the **User Interaction Enabled** attribute.
+
+    ![alt Set Image attribute to default Photo](images/xcode10b.png?raw=true "Set Image attribute to default Photo")
 
 1. Now in filter for "tap" in the Object library
 
@@ -272,6 +280,8 @@ The assets folder of this code repository ([https://github.com/drewby/FriesOrNot
 
 1. Hold the Control-key and drag the Tap Gesture (from top of canvas) to your ViewController just above the closing curly brace.
 
+    ![alt Set Image attribute to default Photo](images/xcode16a.png?raw=true "Set Image attribute to default Photo")
+    
 1. Change the **Connection** to **Action** and the **Type** to **UITapGestureRecognizer**. **Name** the new action "selectImage"
 
     ![alt Set connection properties for Tap Gesture](images/xcode17.png?raw=true "Set connection properties for Tap Gesture")
@@ -279,6 +289,8 @@ The assets folder of this code repository ([https://github.com/drewby/FriesOrNot
 ### Write code for Image Picker
 
 1. Click to show Standard Editor
+
+    ![alt Set connection properties for Tap Gesture](images/xcode18a.png?raw=true "Set connection properties for Tap Gesture")
 
 1. Make sure ViewController.swift is open in editor.
 
@@ -313,7 +325,7 @@ The assets folder of this code repository ([https://github.com/drewby/FriesOrNot
 
     ```swift
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        guard let selectedImage = info UIImagePickerControllerOriginalImage] as? UIImage else {
+        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else {
             fatalError("Expected an image, but was provided \(info)")
         }
         
