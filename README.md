@@ -205,6 +205,8 @@ The assets folder of this code repository ([https://github.com/drewby/FriesOrNot
 
 1. Click the Constraints button at the bottom of the canvas window.
 
+    ![alt Set spacing to 8](images/xcode6a.png?raw=true "Set spacing to 8")
+
 1. Above **Spacing to nearest neighbor**, enter 20 for the Top and 0 for the Left and Right boundaries. 
 
 1. Click **Add 3 Constraints**
@@ -224,7 +226,11 @@ The assets folder of this code repository ([https://github.com/drewby/FriesOrNot
 
 1. Open Assets.xcassets by clicking in the Project Navigator.
 
+    ![alt Set height of Image View](images/xcode9a.png?raw=true "Set height of Image View")
+
 1. Click the **+** button to add a **New Image Set**
+
+    ![alt Set Image attribute to default Photo](images/xcode10a.png?raw=true "Set Image attribute to default Photo")
 
 1. Double-click the new image set and rename to "defaultPhoto"
 
@@ -232,13 +238,15 @@ The assets folder of this code repository ([https://github.com/drewby/FriesOrNot
 
     ![alt Set height of Image View](images/xcode9.png?raw=true "Set height of Image View")
 
-1. Select the Image View in the canvas again.
+1. Select the **Image View** in the canvas **Main.storyboard** again.
 
 1. Set the **Image** attribute to defaultPhoto.
 
     ![alt Set Image attribute to default Photo](images/xcode10.png?raw=true "Set Image attribute to default Photo")
 
 1. Check the **User Interaction Enabled** attribute.
+
+    ![alt Set Image attribute to default Photo](images/xcode10b.png?raw=true "Set Image attribute to default Photo")
 
 1. Now in filter for "tap" in the Object library
 
