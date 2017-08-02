@@ -236,7 +236,7 @@ The assets folder of this code repository ([https://github.com/drewby/FriesOrNot
 
 1. Set the **Image** attribute to defaultPhoto.
 
-    ![alt Set Image attribute to default Photo](images/xcode9.png?raw=true "Set Image attribute to default Photo")
+    ![alt Set Image attribute to default Photo](images/xcode10.png?raw=true "Set Image attribute to default Photo")
 
 1. Check the **User Interaction Enabled** attribute.
 
