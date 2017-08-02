@@ -280,6 +280,8 @@ The assets folder of this code repository ([https://github.com/drewby/FriesOrNot
 
 1. Hold the Control-key and drag the Tap Gesture (from top of canvas) to your ViewController just above the closing curly brace.
 
+    ![alt Set Image attribute to default Photo](images/xcode16a.png?raw=true "Set Image attribute to default Photo")
+    
 1. Change the **Connection** to **Action** and the **Type** to **UITapGestureRecognizer**. **Name** the new action "selectImage"
 
     ![alt Set connection properties for Tap Gesture](images/xcode17.png?raw=true "Set connection properties for Tap Gesture")
@@ -287,6 +289,8 @@ The assets folder of this code repository ([https://github.com/drewby/FriesOrNot
 ### Write code for Image Picker
 
 1. Click to show Standard Editor
+
+    ![alt Set connection properties for Tap Gesture](images/xcode18a.png?raw=true "Set connection properties for Tap Gesture")
 
 1. Make sure ViewController.swift is open in editor.
 
@@ -321,7 +325,7 @@ The assets folder of this code repository ([https://github.com/drewby/FriesOrNot
 
     ```swift
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        guard let selectedImage = info UIImagePickerControllerOriginalImage] as? UIImage else {
+        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else {
             fatalError("Expected an image, but was provided \(info)")
         }
         
